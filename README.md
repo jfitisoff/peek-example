@@ -4,7 +4,7 @@ Some UI tests for peek.com's home page.
 
 ## Setup
 
-- Download chromedriver and put it somewhere on your path.
+- Download the [chromedriver](http://chromedriver.chromium.org/downloads) binary that's compatible with your chrome version and put it somewhere on your path.
 - `bundle install`
 
 ## Running tests
