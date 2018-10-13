@@ -9,8 +9,8 @@ describe "home page" do
     it "searches for activities" do
       s.search_form.search(
         where: "Tracy, CA, USA",
-        start: "10/15/2018",
-        end: "10/22/2018"
+        start: "12/15/2018",
+        end: "12/22/2018"
       )
       wait(15.seconds).for { s.search_page? }.to eq(true)
     end
@@ -26,7 +26,7 @@ describe "home page" do
     end
 
     it "displays 14 categories when 'See More Categories' button is clicked" do
-      s.home_page.discover_activities.see_more_categories.scroll.to
+      s.home_page.discover_activities.see_more_categories.scroll.to # Why Selenium is "fun."
       s.home_page.discover_activities.see_more_categories.click
       wait(4.seconds).for(s.home_page.discover_activities.categories.length).to eq(14)
     end
