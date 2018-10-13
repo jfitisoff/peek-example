@@ -72,7 +72,7 @@ PLATFORMS
 DEPENDENCIES
   factory_bot
   faker
-  insite
+  insite (= 0.2.3)
   pry
   rspec (>= 3.7.0)
   rspec-retry
